@@ -1,0 +1,46 @@
+.display{
+    width:100%;
+    background-color: white;
+    padding-bottom:30%;
+}
+
+.fun{
+    margin-left:30%;
+    margin-right: 20%;
+    margin-top:4%;
+}
+
+.fun2{
+    margin-left:35%;
+    margin-right: 35%;
+    margin-top:1%;
+}
+
+body{
+    margin:0;
+}
+
+input{
+    width:60%;
+    height: 30px;
+}
+
+.button1{
+    width:30%;
+    height:35px;
+    border-color: rosybrown;
+    background-color: whitesmoke;
+}
+
+.button2{
+    width:30%;
+    height:35px;
+    border-color: lightgrey;
+    background-color: whitesmoke;
+}
+
+.childbox{
+    width:10%;
+    height: 6px;
+    background-color: yellow;
+}
