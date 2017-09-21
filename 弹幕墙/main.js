@@ -1,4 +1,3 @@
-/*将弹幕储存在本地数据库中*/
 $(document).ready(function(){
     $("#launch").click(function(e){
         var site = new Object;
@@ -17,3 +16,30 @@ $(document).ready(function(){
         $('#display').append(child);
     })
 })
+
+var content=[];
+var contentinformation=Object;
+
+function Save(){
+    var content1 = document.getElementById("content").value;
+    content=[content1];
+    contentinformation={
+        content:content1,
+    };
+    if(isNull()==false){
+        alert("Please refine your danmu!");
+    }else {
+        $.ajax({
+            type: 'PUT',
+            data: contentinformation,
+            url:  'http://47.93.200.205:8080/account/post',
+            crossDomain: true,
+            success: function (data) {
+                postSuccess(data);
+            }
+        })
+    }
+    console.log(contentinformation);
+    return contentinformation;
+}
+
